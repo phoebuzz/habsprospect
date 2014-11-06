@@ -1,0 +1,508 @@
+/*
+	Theme Name: Hueman Child
+	Theme URI: http://alxmedia.se/themes/hueman/
+	Description: Sample child theme for customization.
+	Author: You
+	Author URI: 
+	Template: hueman
+	Version: 1.0.0
+*/
+
+@import url("../hueman/style.css");
+
+/* Large - 1200px */
+@media only screen and (max-width: 1200px) {
+
+	.listing-player {
+		width: 32.5% !important;
+	}
+
+}
+
+/* Large - 960px */
+@media only screen and (max-width: 960px) {
+
+	.listing-player {
+		width: 24.5% !important;
+	}
+
+}
+
+/* Large - 768px */
+@media only screen and (max-width: 768px) {
+
+	.listing-player {
+		width: 32.5% !important;
+	}
+
+	.players-list h2 {
+		font-size: 14px !important;
+	}
+
+	.attachment-logo-thumb {
+		width: 40px !important;
+		bottom: -30px !important;
+	}
+
+}
+
+/* Large - 600px */
+@media only screen and (max-width: 600px) {
+
+	.listing-player {
+		width: 49% !important;
+	}
+
+	.listing-player .post-inner {
+		margin-right: 10px !important;
+	}
+
+}
+
+
+/* Tablet - 800px, 768px & 720px */
+@media only screen and (min-width: 720px) and (max-width: 800px) {
+	.mystyle {}
+
+	table td {
+	font-size: 12px;
+	}
+}
+
+
+/* Mobile - 480px & 320px */
+@media only screen and (max-width: 719px) {
+	.mystyle {}
+	table td {
+		font-size: 9.5px !important;
+	}
+
+	.player-card {
+		font-size: 8px;
+	}
+
+	.player-thumb {
+		width: 30% !important;
+	}
+
+	.player-team-overlay-container {
+		top: 10% !important;
+	}
+
+	.player-intro img {
+		right: 15px !important;
+		top: 50% !important;
+		height: 35px !important;
+		margin-top: -17px !important;
+		border-left: 0 !important;
+	}
+
+	.player-info {
+		width: 30% !important;
+		font-size: 11px;
+	}
+
+	.profile-wrap span, .profile-wrap h4 {
+		padding: 0 !important;
+	}
+}
+
+
+/* Mobile - 320px */
+@media only screen and (max-width: 479px) {
+	.mystyle {}
+
+	table td {
+	font-size: 10px;
+	}
+}
+
+
+/* ------------------------------------------------------------------------- *
+ *  Player Listing
+/* ------------------------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------- *
+ *  Single Player
+/* ------------------------------------------------------------------------- */
+
+/* Global */
+.mystyle {}
+
+table td {
+	font-size: 14px;
+}
+
+.player-thumb {
+	display: inline-block;
+	float: left;
+	margin-right: 3%;
+}
+
+.player-info {
+	display: inline-block;
+	width: 23%;
+	float: left;
+}
+
+.player-card {
+	display: block;
+	position: relative;
+	padding: 15px;
+	background-color: rgba(190, 47, 55, 1);
+	color: #fff;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.player-card h4, .player-card h1 {
+	color: #fff;	
+}
+
+.profile-wrap {
+	position: relative;
+}
+
+.profile-wrap span, .profile-wrap h4 {
+	padding: 0;
+}
+
+.player-intro {
+	background-color: #be2f37;
+	margin-bottom: 10px;
+	height: 80px;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.ep-parser {
+	margin-bottom: 30px;
+}
+
+.player-intro img {
+	position: absolute;
+	right: 0;
+	opacity: 1;
+	border-left: 10px solid white;
+}
+
+.player-intro h1 {
+	color: #fff;
+	padding-left: 15px;
+}
+
+.profile-card img {
+	opacity: 0.7;
+	position: absolute;
+}
+
+
+.player-intro h1 span {
+	border: 1px solid #fff;
+	padding: 0px 5px;
+	font-size: 28px;
+	background-color: #21386f;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.player-intro h1 span .info-wrap {
+	border: 1px solid #fff;
+	padding: 0px 5px;
+	width: 50px;
+	height: 50px;
+	font-size: 24px;
+	display: inline-block;
+	background-color: #21386f;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.post-title img {
+	opacity: 1;
+	width: 50px;
+	height: 50px;
+	margin-left: 15px;
+}
+
+.player-intro .post-title {
+	display: inline-block;
+	line-height: 80px !important;
+}
+
+.player-team-overlay-container {
+	position: absolute;
+	width: 45%;
+	margin: 0;
+	top: -30%;
+	right: 0;
+}
+
+.attachment- {
+	margin: auto;
+	z-index: 100;
+	opacity: .3;
+}
+
+
+
+/********************Tabs Player **************************/
+
+#header {
+	width: 100%;
+	background: url(assets/img/bg-header.png);
+	position: relative;
+	height: 300px;
+	padding-bottom: 0;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.site-title {
+	font-size: 42px;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	float: left;
+	line-height: 60px;
+	padding: 10px 0;
+	width: 338px;
+}
+
+#header .pad {
+	padding: 30px 0;
+}
+
+
+
+/*
+ * Dropdown menu
+ */
+
+
+.dropdown {
+  position: relative;
+  text-align: left;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.dropdown-text::-moz-selection,
+.dropdown-toggle::-moz-selection { background: transparent; color: inherit; }
+.dropdown-text::selection,
+.dropdown-toggle::selection { background: transparent; color: inherit; }
+
+.dropdown-text {
+  cursor: pointer;
+  position: absolute;
+  text-indent: 30px;
+  line-height: 58px;
+  background-color: #be2f37;
+  width: 100%;
+}
+
+
+.dropdown-text,
+.dropdown-content a {
+  color: #fff;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+}
+
+.dropdown-toggle {
+  font-size: 0;
+  z-index: 1;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  border: none;
+  padding: 0;
+  margin: 0 0 0 1px;
+  background: transparent;
+  text-indent: -30px;
+  height: 58px;
+  width: 100%;
+}
+
+
+.dropdown-toggle:focus {
+  outline: 0;
+}
+
+.dropdown-content {
+  opacity: 1;
+  -webkit-transition: .25s ease;
+  -moz-transition: .25s ease;
+  -ms-transition: .25s ease;
+  -o-transition: .25s ease;
+  transition: .25s ease;
+  list-style-type: none;
+  position: absolute;
+  top: 32px;
+  padding: 0;
+  margin: 0;
+  visibility:hidden;
+  text-indent: 30px;
+  line-height: 38px;
+  width: 100%;
+  background-color: #be2f37;
+  max-height:250px;/* you can change as you need it */
+  overflow:auto;/* to get scroll */
+}
+
+.dropdown-content:after {
+  position: absolute;
+  right: 14px;
+  top: -9px;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 0 8px 9px 8px;
+  border-color: transparent transparent #be2f37 transparent;
+}
+
+.dropdown-content li {
+  border-bottom:4px solid #4f4f4b;
+  overflow:hidden;
+  }
+.dropdown-content li:last-child {
+    border-bottom:none;
+    }
+.dropdown-content a {
+  display: block;
+  -webkit-transition: .25s ease;
+  -moz-transition: .25s ease;
+  -ms-transition: .25s ease;
+  -o-transition: .25s ease;
+  transition: .25s ease;
+}
+
+.dropdown-content a:hover {
+  background: #fff;
+  padding-left:5px;
+  color: #be2f37;
+}
+
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus {
+  background-color: transparent;
+}
+
+.dropdown-toggle .dropdown-text {
+  border-color: #c5c5c5;
+  z-index: 2;
+}
+
+.dropdown-toggle .dropdown-text:after {
+  border-width: 0 4px 5px 4px;
+  border-color: transparent transparent #555 transparent;
+}
+
+.dropdown-content,
+.dropdown-toggle .dropdown-content {
+  opacity: 1;
+  visibility:visible;
+  top: 67px;
+}
+
+.listing-player {
+	display: inline-block;
+	width: 24.5%;
+	height: auto;
+}
+
+.players-list {
+	margin-right: 10px;
+}
+
+.players-list h2 {
+	font-size: 16px;
+}
+
+.pad.group > h2 {
+	margin: 20px 0;
+}
+
+.listing-player .players-list h2 a {
+	color: #fff;
+	background-color: #be2f37;
+	padding: 5px;
+	display: block;
+	border: 1px solid transparent;
+}
+
+.listing-player .players-list h2 a:hover {
+	background-color: #fff;
+	color: #be2f37;
+	border: 1px solid #be2f37;
+}
+
+.listing-player .post-thumbnail {
+	margin-bottom: 0;
+}
+
+.post-hover:hover .post-title a {
+	background-color: #fff;
+	border: 1px solid #be2f37;
+}
+
+.position-listing > h2  {
+	font-size: 20px;
+}
+
+#nav-topbar.nav-container, .search-expand {
+	background-color: #be2f37;
+}
+
+.site-title a img {
+display: block;
+max-width: 100%;
+max-height: 60px;
+height: auto;
+padding: 5px;
+margin: 0;
+-webkit-border-radius: 0;
+border-radius: 0;
+background-color: #fff;
+border: 2px solid #be2f37;
+}
+
+
+.post-thumbnail .attachment-logo-thumb {
+	position: absolute;
+	right: 0;
+	width: 50px;
+	height: auto !important;
+	bottom: -35px;
+}
+
+
+.sidebar-top {
+	margin-bottom: 30px;
+}
+
+.nav-wrap {
+	position: relative;
+}
+
+
+
+.lang-switcher {
+	position: absolute !important;
+	right: 60px;
+	color: #fff;
+	bottom: 0;
+	padding: 15px 14px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
